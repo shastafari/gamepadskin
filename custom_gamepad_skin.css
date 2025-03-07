@@ -1,43 +1,60 @@
 
-/* Custom Gamepad Viewer Skin - Cracked Theme */
+/* Custom Gamepad Viewer Skin - Cracked Theme for PS4 */
 
 /* Background and General Styles */
 body {
-    background-color: #0a0f1e; /* Dark blue background */
-    color: #39ff14; /* Neon green text */
+    background-color: #0a0f1e; /* Dark background */
     font-family: 'Arial', sans-serif;
 }
 
-/* Gamepad Button Styles */
+/* Controller Base */
+.controller {
+    filter: drop-shadow(0px 0px 15px #00f0ff); /* Neon glow effect */
+}
+
+/* Buttons */
 button {
     background: linear-gradient(45deg, #3a1cff, #00f0ff); /* Neon blue to cyan */
-    border: 2px solid #ff00ff; /* Neon purple outline */
+    border: 2px solid #ff00ff; /* Neon purple */
     color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px #00f0ff;
-    transition: 0.3s ease-in-out;
 }
 
-button:hover {
-    background: linear-gradient(45deg, #00f0ff, #3a1cff);
+button:active {
+    transform: scale(0.95);
     box-shadow: 0 0 20px #ff00ff;
 }
 
-/* Joystick Styling */
-.joystick {
-    background-color: #0a0f1e;
-    border: 3px solid #ff00ff; /* Neon purple */
-    box-shadow: 0 0 15px #00f0ff;
-}
-
-/* D-Pad Styling */
+/* D-Pad */
 .dpad {
     background: linear-gradient(45deg, #3a1cff, #00f0ff);
     border: 2px solid #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
 }
 
-/* Trigger and Bumper Styling */
+/* Face Buttons (Triangle, Circle, X, Square) */
+.face-button {
+    background: linear-gradient(45deg, #00f0ff, #ff00ff);
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Joysticks */
+.joystick {
+    background-color: #0a0f1e;
+    border: 3px solid #ff00ff; /* Neon purple */
+    box-shadow: 0 0 15px #00f0ff;
+}
+
+/* Touchpad */
+.touchpad {
+    background: linear-gradient(45deg, #3a1cff, #00f0ff);
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Triggers and Bumpers */
 .trigger, .bumper {
     background: linear-gradient(45deg, #00f0ff, #ff00ff);
     box-shadow: 0 0 10px #ff00ff;
